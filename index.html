@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Scoreboard</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body class="bg-image container-fluid">
+  <header>
+    <section class="row justify-content-end m-2 p-2">
+      <button class="btn btn-danger col-1" onclick="resetBoard()">RESET</button>
+    </section>
+  </header>
+
+  <main class="container-fluid mw align-items-center">
+    <section class="row justify-content-center text-light text-center bg-primary border">
+      <h1 class="col-4 m-1 p-1">Home</h1>
+      <h1 class="col-4 m-1 p-1">Away</h1>
+    </section>
+    <section class="row bg-primary border justify-content-center text-light text-center">
+      <div class="col-3 fs-5 m-5 p-5">
+        <h1 id="homeScore">0</h1>
+      </div>
+      <div class="col-3 fs-5 m-5 p-5">
+        <h1 id="awayScore">0</h1>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container-fluid d-flex flex-column p-5">
+    <section class="row justify-content-around">
+      <button id="home1" class="btn btn-primary col-2 m-3 p-3 border" onclick="changeHomeOne()">HOME + 1</button>
+      <button id="away1" class=" btn btn-primary col-2 m-3 p-3 border" onclick="changeAwayOne()">AWAY + 1</button>
+    </section>
+    <section class="row justify-content-around">
+      <button id="home3" class="btn btn-primary col-2 m-3 p-3 border" onclick="changeHomeThree()">HOME + 3</button>
+      <button id="away3" class="btn btn-primary col-2 m-3 p-3 border" onclick="changeAwayThree()">AWAY + 3</button>
+    </section>
+  </footer>
+
+
+
+
+
+
+
+  <!-- Bootstrap JavaScript Libraries -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+    </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
